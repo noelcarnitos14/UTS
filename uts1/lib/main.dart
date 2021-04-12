@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
         title: Text('BMI Calculator'),
         centerTitle: true,
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.green,
       ),
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 20.0),
@@ -30,33 +30,33 @@ class _MyAppState extends State<MyApp> {
               controller: _tinggiController,
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                labelText: 'Silahkan Masukkan Tinggi Badan Anda',
+                labelText: 'Mohon Masukkan Tinggi Badan',
                 icon: Icon(Icons.trending_up),
               ),
             ),
-            SizedBox(height: 25),
+            SizedBox(height: 30),
             TextField(
               controller: _beratController,
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                labelText: 'Silahkan Masukkan Berat Badan Anda',
+                labelText: 'Mohon Masukkan Berat Badan',
                 icon: Icon(Icons.line_weight),
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 25),
             ElevatedButton(
               child: Text(
                 "Hitung",
-                style: TextStyle(color: Colors.orange),
+                style: TextStyle(color: Colors.blue),
               ),
               onPressed: calculateBMI,
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 25),
             Text(
               _result == null ? "Enter Value" : "${_result.toStringAsFixed(2)}",
               style: TextStyle(
                 color: Colors.black26,
-                fontSize: 19.4,
+                fontSize: 20.5,
                 fontWeight: FontWeight.w500,
               ),
             ),
